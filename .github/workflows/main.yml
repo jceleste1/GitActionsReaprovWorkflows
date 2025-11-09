@@ -25,3 +25,6 @@ jobs:
    uses: jceleste1/GitActionsReaprovWorkflows/.github/workflows/cd.yml@main
    with:
      ambiente: ${{  inputs.ambiente }}
+   secrets:
+     ambiente_secrets:  ${{  secrets.AMBIENTE_ENTREGA }}
+

@@ -6,9 +6,15 @@ on:
               type: string
               default: "desenvolvimento"
               description: "Ambiente aonde vai ser feito o deploy "
+       secrets:
+           ambiente_secrets:
+              type: string
+              default: "desenvolvimento"
+              description: "Ambiente Secret aonde vai ser feito o deploy "
+                    
 jobs:
     deploy-kubernetes:
         runs-on: ubuntu-latest
         steps:
            - name: Deploy no ambiente
-             run: echo "Executando deploy no ambiente ${{ inputs.ambiente }}"
+             run: echo "Executando deploy no ambiente ${{ inputs.ambiente }}  secrets  ${{ ambiente_secrets }}    "
