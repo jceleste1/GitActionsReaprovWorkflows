@@ -5,7 +5,7 @@ on:
            ambiente:
               type: string
               default: "desenvolvimento"
-              description: "Ambiente aonde vai ser o deploy "
+              description: "Ambiente aonde vai ser feito o deploy "
 jobs:
     deploy-kubernetes:
         runs-on: ubuntu-latest
