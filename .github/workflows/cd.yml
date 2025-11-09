@@ -10,5 +10,5 @@ jobs:
     deploy-kubernetes:
         runs-on: ubuntu-latest
         steps:
-           -name: Deploy no ambiente
-            run: echo "Executando deploy no ambiente ${{ inputs.ambiente }}"
+           - name: Deploy no ambiente
+             run: echo "Executando deploy no ambiente ${{ inputs.ambiente }}"
