@@ -1,0 +1,14 @@
+name: Deploy Fake
+on:
+   workflow_call:
+       inputs:
+           ambiente:
+              type: string
+              default: "desenvolvimento"
+              description: "Ambiente aonde vai ser o deploy "
+jobs:
+    deploy-kubernetes:
+        runs-on: ubuntu-latest
+        steps:
+           -name: Deploy no ambiente
+            run: echo "Executando deploy no ambiente ${{ inputs.ambiente }}"
