@@ -22,6 +22,8 @@ jobs:
               run: echo "Publicação da Relase final"
     CD:
         needs: [CI]
-        uses: jceleste1/GitActionsReaprovWorkflows/.github/workflows/cd.yml@main
+        uses: jceleste1/GitActionsReaprovWorkflows/tree/main/.github/workflows/cd.yml@main
         with:
           ambiente: ${{  inputs.ambiente }}
+
+          
