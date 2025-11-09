@@ -3,8 +3,9 @@ on:
     workflow_dispatch:  
       inputs:
         ambiente:
-            type: string
+            type: choice
             default: "desenvolvimento"
+            description: "Ambiente aonde vai ser feito o deploy "
             options:
               - desenvolvimento
               - homologacao
