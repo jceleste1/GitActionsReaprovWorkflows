@@ -25,5 +25,3 @@ jobs:
         uses: jceleste1/GitActionsReaprovWorkflows/.github/workflows/cd.yml@main
         with:
           ambiente: ${{  inputs.ambiente }}
-
-          
