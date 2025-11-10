@@ -26,5 +26,5 @@ jobs:
    with:
      ambiente: ${{  inputs.ambiente }}
    secrets:
-     ambiente_secrets: ${{  secrets.AMBIENTE_ENTREGA }}
+     password: ${{  secrets.AMBIENTE_ENTREGA }}
 
