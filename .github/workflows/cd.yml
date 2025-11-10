@@ -8,7 +8,6 @@ on:
               description: "Ambiente aonde vai ser feito o deploy "
        secrets:
            ambiente_secrets:
-              type: string
               default: "desenvolvimento"
               description: "Ambiente Secret aonde vai ser feito o deploy "
                     
