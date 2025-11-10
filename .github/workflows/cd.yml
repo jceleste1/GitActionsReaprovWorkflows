@@ -8,7 +8,7 @@ on:
               description: "Ambiente aonde vai ser feito o deploy "
        secrets:
            ambiente_secrets:
-              requered: true
+              required: true
               description: "Ambiente Secret aonde vai ser feito o deploy "
                     
 jobs:
