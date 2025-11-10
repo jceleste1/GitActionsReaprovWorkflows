@@ -10,6 +10,11 @@ on:
               - desenvolvimento
               - homologacao
               - producao
+      secrets:
+        ambiente_secrets:
+            type: string
+            default: "desenvolvimento"
+            description: "Ambiente Secret aonde vai ser feito o deploy "           
 jobs:
   CI:
     runs-on: ubuntu-latest
